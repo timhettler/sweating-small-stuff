@@ -1,0 +1,126 @@
+@import 'compass';
+@import 'photoshop-drop-shadow';
+
+body {
+  font-family: Helvetica;
+}
+
+// Simple shadow
+div.box-shadow {
+  @include photoshop-drop-shadow(120, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+// Inner shadow
+div.inner-box-shadow {
+  @include photoshop-inner-shadow(120, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+// Supporting multiple shadows
+div.multiple-box-shadow {
+  @include box-shadow(
+    photoshop-shadow(120, 5px, 0, 5px, rgba(#000, 0.75)),
+    photoshop-shadow(120, 5px, 0, 5px, rgba(#000, 0.75), inset)
+  );
+}
+
+// // Text Shadow
+// h1 {
+//   // NOTE: $spread has no effect for text shadows
+//   @include photoshop-text-shadow(120, 5px, 0, 5px, rgba(#000, 0.75));
+// }
+
+// // Multiple Text Shadow
+// h2 {
+//   @include text-shadow(
+//     photoshop-text-shadow(120, 5px, 0, 5px, rgba(#000, 0.75)),
+//     photoshop-text-shadow(-60, 5px, 0, 5px, rgba(#300, 0.75))
+//   );
+// }
+
+// just to make it look better
+// div {
+//   float: left;
+//   background-color: #ccc;
+//   height: 100px;
+//   width: 100px;
+//   padding: 20px;
+//   margin: 20px;
+// }
+
+.text-shadow-container {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+%text-shadow-example {
+  font-size: 28px;
+}
+
+.text-shadow--120 {
+  @extend %text-shadow-example;
+  @include photoshop-text-shadow(120, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+.grid--4 {
+  @include clearfix();
+  padding: 3em;
+
+  .grid-item {
+    float: left;
+    width: 25%;
+  }
+}
+
+%shadow-test {
+  background-color: #ccc;
+  height: 150px;
+  line-height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+}
+
+.shadow-test--0 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(0, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test--90 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(90, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test--180 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(180, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test---90 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(-90, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test--45 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(45, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test--135 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(135, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test---135 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(-135, 5px, 0, 5px, rgba(#000, 0.75));
+}
+
+.shadow-test---45 {
+  @extend %shadow-test;
+  @include photoshop-drop-shadow(-45, 5px, 0, 5px, rgba(#000, 0.75));
+}

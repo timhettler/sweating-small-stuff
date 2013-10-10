@@ -1,0 +1,92 @@
+@import "compass";
+@import "photoshop-gradient-overlay";
+
+body {
+  font-family: Helvetica;
+  font-size: 28px;
+  text-align: center;
+}
+
+%gradient-example {
+  color: #fff;
+  height: 300px;
+  line-height: 300px;
+  width: 300px;
+  text-shadow: 0 0.1em rgba(0,0,0,0.4);
+}
+
+.group {
+  @include clearfix();
+  margin: 1em auto;
+
+  .group-item {
+    float: left;
+    width: 25%;
+  }
+}
+
+// Angle
+
+.gradient--angle--0{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $angle: 0deg));
+}
+
+.gradient--angle--90{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay(#fff));
+}
+
+.gradient--angle--180{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $angle: 180deg));
+}
+
+.gradient--angle--270{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $angle: 270deg));
+}
+
+// Scale
+
+.gradient--scale--50{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $scale: 50%));
+}
+
+.gradient--scale--75{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $scale: 75%));
+}
+
+.gradient--scale--125{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $scale: 125%));
+}
+
+.gradient--scale--150{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $scale: 150%));
+}
+
+// Stops
+
+.gradient--stops--3{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $color-stops: ( red 0%, green 50%, blue 100% )));
+}
+
+.gradient--stops--4{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $color-stops: ( red 0%, yellow 33.3333%, green 66.6666%, blue 100% )));
+}
+
+.gradient--stops--5{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $color-stops: ( red 0%, orange 25%, yellow 50%, green 75%, blue 100% )));
+}
+
+.gradient--stops--6{
+  @extend %gradient-example;
+  @include background-image(photoshop-gradient-overlay($bg-color: #fff, $color-stops: ( red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100% )));
+}

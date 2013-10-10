@@ -1,0 +1,165 @@
+@import "functions";
+@import "placeholders";
+@import "mixins";
+
+$yiq-contrasted-dark-default: #333;
+$yiq-contrasted-light-default: #fff;
+
+$hover-change-amount: 10;
+
+$blend-modes: normal, multiply, overlay;
+
+$button-color-names: 'orange', 'yellow', 'hotpink', 'bada55';
+$button-color-values: #fa5400, #ffd204, hotpink, #bada55;
+
+@each $mode in $blend-modes {
+    .button-#{$mode} {
+        @include photoshop-button(#fa5400, true, true, true, $mode);
+    }
+}
+
+@for $i from 1 through length($button-color-names) {
+    .button-#{nth($button-color-names, $i)} {
+        @include photoshop-button(nth($button-color-values, $i), true, true, true, overlay);
+    }
+}
+
+.button-crap {
+  @extend %button;
+  @include scale(4);
+
+  @include button--coloring--default(#fa5400, normal);
+
+  box-shadow: 0 1px 0 1px rgba(0,0,0,0.25);
+  color: #333;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+
+  &:hover,
+  &.is-hover {
+      @include button--coloring--hover(#fa5400, normal);
+  }
+
+  &:active,
+  &:focus,
+  &.is-active {
+      @include button--coloring--active(#fa5400, normal);
+      box-shadow: inset 0 1px 0 4px rgba(0,0,0,0.35);
+      text-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  }
+}
+
+// Base Buttons (no shadow or gradient)
+
+.button-base-orange {
+  @extend %button-base;
+}
+
+.button-base-blue {
+  @extend %button-base;
+  background-color: #00a4e4;
+}
+
+// Text Color Logic Buttons
+
+.button-dark {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#983168, #333, #fff, 50%);
+}
+
+.button-light {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#ffd204, #333, #fff, 50%);
+}
+
+.button-DC404A-30 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#DC404A, #333, #fff);
+}
+
+.button-87e300-30 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#87e300, #333, #fff);
+}
+
+.button-00A4E4-30 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#00A4E4, #333, #fff);
+}
+
+.button-DC404A-50 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#DC404A, #333, #fff, 50%);
+}
+
+.button-87e300-50 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#87e300, #333, #fff, 50%);
+}
+
+.button-00A4E4-50 {
+  @extend %button-base;
+  @include scale(4);
+  @include contrasted(#00A4E4, #333, #fff, 50%);
+}
+
+.button-DC404A-yiq {
+  @extend %button-base;
+  @include scale(4);
+  @include yiq-contrasted(#DC404A);
+}
+
+.button-87e300-yiq {
+  @extend %button-base;
+  @include scale(4);
+  @include yiq-contrasted(#87e300);
+}
+
+.button-00A4E4-yiq {
+  @extend %button-base;
+  @include scale(4);
+  @include yiq-contrasted(#00A4E4);
+}
+
+// Managing State
+
+.button-state-fa4500 {
+  @extend %button-base;
+  @include yiq-contrasted(#fa5400);
+
+  &:hover,
+  &.is-hover {
+    background-color: adjust-color(#fa5400, $lightness: $hover-change-amount);
+  }
+}
+
+.button-state-87e300 {
+  @extend %button-base;
+  @include yiq-contrasted(#87e300);
+
+  &:hover,
+  &.is-hover {
+    background-color: adjust-color(#87e300, $lightness: $hover-change-amount * -1);
+  }
+}
+
+// Shadow Buttons
+
+.button-drop-shadow {
+  @include photoshop-button(#fa5400, true);
+}
+
+.button-text-shadow {
+  @include photoshop-button(#fa5400, true, true);
+}
+
+.button-wrapper {
+  margin: 2em 0;
+  text-align: center;
+}
