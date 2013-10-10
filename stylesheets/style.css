@@ -795,7 +795,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
@@ -812,7 +812,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-normal:active, .button-normal.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
@@ -826,7 +826,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(250, 84, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(250, 84, 0, 0.5) 100%);
@@ -843,7 +843,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-multiply:active, .button-multiply.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(250, 84, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(250, 84, 0, 0.5) 100%);
@@ -857,7 +857,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
@@ -874,7 +874,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-overlay:active, .button-overlay.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
@@ -888,7 +888,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
@@ -905,7 +905,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-orange:active, .button-orange.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%);
@@ -918,7 +918,7 @@ html, body {
 .button-yellow {
   background-color: #ffd204;
   color: #333333;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 8, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 8, 0.5) 100%);
@@ -935,7 +935,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-yellow:active, .button-yellow.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 8, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 8, 0.5) 100%);
@@ -948,7 +948,7 @@ html, body {
 .button-hotpink {
   background-color: hotpink;
   color: #333333;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(255, 0, 105, 0.5) 0%, rgba(255, 210, 255, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(255, 0, 105, 0.5) 0%, rgba(255, 210, 255, 0.5) 100%);
@@ -965,7 +965,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-hotpink:active, .button-hotpink.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(255, 0, 105, 0.5) 0%, rgba(255, 210, 255, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(255, 0, 105, 0.5) 0%, rgba(255, 210, 255, 0.5) 100%);
@@ -978,7 +978,7 @@ html, body {
 .button-bada55 {
   background-color: #bada55;
   color: #333333;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(90deg, rgba(117, 181, 0, 0.5) 0%, rgba(255, 255, 170, 0.5) 100%);
   background-image: -moz-linear-gradient(90deg, rgba(117, 181, 0, 0.5) 0%, rgba(255, 255, 170, 0.5) 100%);
@@ -995,7 +995,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-bada55:active, .button-bada55.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.4);
   background-image: -webkit-linear-gradient(270deg, rgba(117, 181, 0, 0.5) 0%, rgba(255, 255, 170, 0.5) 100%);
   background-image: -moz-linear-gradient(270deg, rgba(117, 181, 0, 0.5) 0%, rgba(255, 255, 170, 0.5) 100%);
@@ -1194,7 +1194,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
 }
 /* line 21, ../sass/buttons/_mixins.scss */
 .button-drop-shadow:hover, .button-drop-shadow.is-hover, .button-drop-shadow.is-active {
@@ -1202,7 +1202,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-drop-shadow:active, .button-drop-shadow.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
 }
 
 /* line 158, ../sass/buttons/_module_buttons.scss */
@@ -1210,7 +1210,7 @@ html, body {
   background-color: #fa5400;
   color: white;
   -webkit-font-smoothing: antialiased;
-  box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) ;
   text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
 }
 /* line 21, ../sass/buttons/_mixins.scss */
@@ -1219,7 +1219,7 @@ html, body {
 }
 /* line 31, ../sass/buttons/_mixins.scss */
 .button-text-shadow:active, .button-text-shadow.is-active {
-  box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(0, 0, 0, 0.35));
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -1229,14 +1229,14 @@ html, body {
   text-align: center;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .wrapper {
   margin: 3em auto;
   max-width: 960px;
   text-align: center;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .code-example {
   font-size: 20px;
   text-transform: none;
@@ -1244,12 +1244,12 @@ html, body {
   word-spacing: 0;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .unimpress-slide {
   padding: 0 1em;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .flex-row--2, .flex-row--3 {
   display: -webkit-box;
   display: -moz-box;
@@ -1273,27 +1273,39 @@ html, body {
   align-items: center;
   width: 100%;
 }
-/* line 38, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .flex-row--2 pre, .flex-row--3 pre {
   width: 99%;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .flex-row--2 .flex-item {
   width: 50%;
+  flex-grow: 1;
 }
 
 /* line 54, ../sass/style.scss */
 .flex-row--3 .flex-item {
   width: 33.3333%;
+  flex-grow: 1;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
+.flex-item--adjustments {
+  width: 435px !important;
+}
+
+/* line 64, ../sass/style.scss */
+.flex-item--buttons {
+  width: 520px !important;
+}
+
+/* line 68, ../sass/style.scss */
 .centered {
   text-align: center;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 body, .slide-title, .slide-title--main, .slide-title--sub {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -1301,18 +1313,18 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   word-spacing: -0.05em;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .slide-title, .slide-title--main {
   color: #dc404a;
   line-height: 0.9;
 }
-/* line 75, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .slide-title b, .slide-title--main b {
   color: #666666;
   font-weight: normal;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .slide-title--sub {
   color: #666666;
   display: block;
@@ -1320,23 +1332,23 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   font-size: 75%;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .slide-title--main {
   font-size: 120px;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .button-table {
   margin: 1.5em 0;
   width: 100%;
   font-size: 60%;
 }
-/* line 99, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .button-table td, .button-table th {
   text-align: center;
   width: 33%;
 }
-/* line 104, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .button-table button {
   -webkit-transform-origin: 50% 0;
   -moz-transform-origin: 50% 0;
@@ -1345,11 +1357,11 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   transform-origin: 50% 0;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .the-button {
   margin: 1.5em 0;
 }
-/* line 112, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .the-button:button {
   -webkit-transform-origin: 50% 0;
   -moz-transform-origin: 50% 0;
@@ -1358,24 +1370,24 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   transform-origin: 50% 0;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .small-text {
   font-size: 50%;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .medium-text {
   font-size: 75%;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .simple-gradient, .complex-gradient {
   margin: 0.25em auto 0;
   height: 300px;
   width: 300px;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .simple-gradient {
   background-image: -webkit-linear-gradient(90deg, #000000 0%, #ffffff 100%);
   background-image: -moz-linear-gradient(90deg, #000000 0%, #ffffff 100%);
@@ -1383,21 +1395,21 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%);
 }
 
-/* line 136, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .complex-gradient {
-  background-image: -webkit-linear-gradient(180deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
-  background-image: -moz-linear-gradient(180deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
-  background-image: -o-linear-gradient(180deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
-  background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
+  background-image: -webkit-linear-gradient(60deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
+  background-image: -moz-linear-gradient(60deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
+  background-image: -o-linear-gradient(60deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
+  background-image: linear-gradient(30deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
 }
 
-/* line 141, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .orange-blue, .purple-green {
   color: transparent !important;
   -webkit-background-clip: text;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .orange-blue {
   background-image: -webkit-linear-gradient(left, #ffa500, #0000ff);
   background-image: -moz-linear-gradient(left, #ffa500, #0000ff);
@@ -1405,7 +1417,7 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   background-image: linear-gradient(to right, #ffa500, #0000ff);
 }
 
-/* line 151, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .purple-green {
   background-image: -webkit-linear-gradient(left, #800080, #008000);
   background-image: -moz-linear-gradient(left, #800080, #008000);

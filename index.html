@@ -12,7 +12,7 @@
         Sweating the Small&nbsp;Stuff:
         <span class="slide-title--sub">Recreating Subtle Design Details Using&nbsp;Sass</span>
       </h1>
-      <p class="small-text">http://timhettler.github.io/sassconf-2013/</p>
+      <p class="small-text">http://timhettler.github.io/sweating-small-stuff/</p>
     </section>
   </article>
   <article>
@@ -100,12 +100,16 @@
   <article>
     <section class="slide-section">
       <p>We can <b>automate</b> this translation</p>
-      <p><b>Sass</b> is the <b>rosetta stone</b> between designers &amp; developers</p>
     </section>
   </article>
   <article>
     <section class="slide-section">
-      <p>Let's rebuild our button using<br/><b>Sass + Compass</b></p>
+      <h2><b>Sass</b> is the <b>rosetta stone</b> between designers &amp; developers</h2>
+    </section>
+  </article>
+  <article>
+    <section class="slide-section">
+      <p>Let's rebuild our button using<br/><b>Sass</b></p>
     </section>
   </article>
   <article>
@@ -146,7 +150,7 @@
 
 .button-blue {
   @extend %button;
-  background-color: hsl(197, 100%, <b>45%</b>);
+  background-color: #00a4e4;
 }</code></pre>
           <pre class="code-example" data-line="1"><code class="language-css">.button-orange, .button-blue {
   &hellip;
@@ -157,7 +161,7 @@
 }
 
 .button-blue {
-  background-color: hsl(197, 100%, <b>45%</b>);
+  background-color: #00a4e4;
 }</code></pre>
         </div>
         <div class="flex-item centered">
@@ -169,7 +173,8 @@
   </article>
   <article>
     <section class="slide-section">
-      <div class="slide-title">Placeholders allow you to write code that is<br/><b>readable</b> during development,<br/>optmized for <b>speed &amp; efficiency</b> in production.</div>
+      <p class="slide-title">Placeholders allow you to write code that is <b/>easy to read</b> in developlement,</p>
+      <p class="slide-title">without sacrificing <b>speed &amp; efficiency</b> in production.</p>
     </section>
   </article>
   <article>
@@ -271,7 +276,7 @@
   </article>
   <article>
     <section class="slide-section">
-      <div class="slide-title centered">The eye is more sensitive to changes in the<br/><b class="orange-blue">orange-blue</b> range than in the <b class="purple-green">purple-green</b> range</div>
+      <div class="slide-title centered">The eye is more sensitive<br/>to changes in the<br/><b class="orange-blue">orange-blue</b> range than in the <b class="purple-green">purple-green</b> range</div>
     </section>
   </article>
   <article>
@@ -314,7 +319,7 @@
   </article>
   <article>
     <section class="slide-section">
-      <h2 class="slide-title">SASS turns a designer's<br/><b>"gut feeling"</b> into a</br><b>repeatable pattern</b></h2>
+      <h2>SASS turns a designer's<br/><b>"gut feeling"</b> into a</br><b>repeatable pattern</b></h2>
     </section>
   </article>
   <article>
@@ -353,10 +358,10 @@
   </article>
   <article>
     <section class="slide-section">
-      <div class="slide-title">Built-In Color Functions</div>
+      <div class="slide-title">Sass Color Functions</div>
       <div class="flex-row--2">
         <div class="flex-item">
-          <pre class="code-example" data-line="6,16"><code class="language-scss">.dark-button {
+          <pre class="code-example" data-line="6,15"><code class="language-scss">.dark-button {
   &hellip;
   @include yiq-contrasted(#fa5400);
 
@@ -374,7 +379,7 @@
   }
 }</code></pre>
         </div>
-        <div class="flex-item">
+        <div class="flex-item--adjustments">
           <figure>
             <img src="images/adjustments.png" alt="">
           </figure>
@@ -418,7 +423,8 @@
   </article>
   <article>
     <section class="slide-section">
-      <h2 class="slide-title">Using SASS, Developers &amp; Designers</br>can speak the same language</h2>
+      <h2 class="slide-title">Using SASS,<br/>
+      Developers &amp; Designers</br>can <b>speak the same language</b></h2>
     </section>
   </article>
   <article>
@@ -526,7 +532,7 @@ $y-offset: round( sin( $angle ) * $distance )</code></pre>
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
 }</code></pre>
         </div>
-        <div class="flex-item centered">
+        <div class="flex-item--buttons centered">
           <div class="centered"><button class="button-drop-shadow">FIND OUT MORE</button></div>
           <div class="centered" style="margin-top: 3em"><button class="button-drop-shadow is-active">FIND OUT MORE</button></div>
         </div>
@@ -644,21 +650,30 @@ $y-offset: round( sin( $angle ) * $distance )</code></pre>
   <article>
     <section class="slide-section">
       <div class="slide-title">Scale</div>
-      <pre class="code-example" data-line="5"><code class="language-scss">@function stop-scale( $stop, $scale ) {
+      <div class="flex-row--2">
+        <div class="flex-item"><pre class="code-example" data-line="5"><code class="language-scss">@function stop-scale( $stop, $scale ) {
     $stop: percentage-to-decimal( $stop );
     $scale: percentage-to-decimal( $scale );
 
     @return $scale * $stop - ( 0.5 * ( $scale - 1 ) );
-}
-
+}</code></pre>
+        </div>
+        <div class="flex-item"><pre class="code-example"><code class="language-scss">
+//Examples
 $stop1: stop-scale( 0%, 100% );   // 0%
-$stop2: stop-scale( 100%, 100% ); // 100%
+$stop2: stop-scale( 50%, 100% );  // 50%
+$stop3: stop-scale( 100%, 100% ); // 100%
 
 $stop1: stop-scale( 0%, 150% );   // -25%
-$stop2: stop-scale( 100%, 150% ); // 125%
+$stop2: stop-scale( 50%, 150% );  // 50%
+$stop3: stop-scale( 100%, 150% ); // 125%
 
 $stop1: stop-scale( 0%, 50% );    // 25%
-$stop2: stop-scale( 100%, 50% );  // 75%</code></pre>
+$stop2: stop-scale( 50%, 50% );   // 50%
+$stop3: stop-scale( 100%, 50% );  // 75%</code></pre>
+        </div>
+      </div>
+
     </section>
   </article>
   <article>
@@ -692,14 +707,12 @@ $css-color-stops: ();
           <pre class="code-example"><code class="language-scss">.simple-gradient {
   @include background-image(
     photoshop-gradient-overlay(
-      100%, 90deg, 100%, ( #000, #fff ), ( 0%, 100% )
+      100%, 90deg, 100%, ( #000 0% , #fff 100% )
     )
   );
 }</code></pre>
           <pre class="code-example"><code class="language-css">.simple-gradient {
-  background-image: -webkit-linear-gradient(
-    bottom, #000000 0%, #ffffff 100%
-  );
+  background-image: linear-gradient(0deg, #000 0%, #FFF 100%);
   &hellip;
 }</code></pre>
         </div>
@@ -718,18 +731,16 @@ $css-color-stops: ();
           <pre class="code-example"><code class="language-scss">.complex-gradient {
   @include background-image(
     photoshop-gradient-overlay(
-      75%, 0deg, 50%, ( red, orange, yellow, green, blue, violet ), ( 0%, 20%, 40%, 60%, 80%, 100% )
+      75%, 0deg, 50%, ( red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100% )
     )
   );
 }</code></pre>
           <pre class="code-example"><code class="language-css">.complex-gradient {
-  background-image: -webkit-linear-gradient(
-    left, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%
-  );
+  background-image: linear-gradient(30deg, rgba(255, 0, 0, 0.75) 25%, rgba(255, 165, 0, 0.75) 35%, rgba(255, 255, 0, 0.75) 45%, rgba(0, 128, 0, 0.75) 55.0%, rgba(0, 0, 255, 0.75) 65%, rgba(238, 130, 238, 0.75) 75%);
   &hellip;
 }</code></pre>
         </div>
-        <div class="flex-item">
+        <div class="flex-item--buttons">
           <img src="images/gradient-complex.png" alt="">
           <div class="complex-gradient"></div>
         </div>
@@ -745,14 +756,14 @@ $css-color-stops: ();
   &hellip;
   @include background-image(
     photoshop-gradient-overlay(
-      50%, 90deg, 100%, ( #000, #fff ), ( 0%, 100% )
+      50%, 90deg, 100%, ( #000 0% , #fff 100% )
     )
   );
 
   &:hover {
     @include background-image(
       photoshop-gradient-overlay(
-        50%, 90deg, 100%, ( #000, #fff ), ( 0%, 100% )
+        50%, 90deg, 100%, ( #000 0% , #fff 100% )
       )
     );
   }
@@ -773,16 +784,16 @@ $css-color-stops: ();
         <div class="flex-item">
           <pre class="code-example"><code class="language-scss">.button {
   &hellip;
-  -webkit-linear-gradient(
-    bottom,
+  linear-gradient(
+    0deg,
     rgba(0, 0, 0, 0.5) 0%,
     rgba(255, 255, 255, 0.5) 100%
   );
 }
 
 .button:active {
-  -webkit-linear-gradient(
-    top,
+  linear-gradient(
+    -180deg,
     rgba(0, 0, 0, 0.5) 0%,
     rgba(255, 255, 255, 0.5) 100%
   );
@@ -821,7 +832,7 @@ $css-color-stops: ();
     @return 255 - 2 * (255 - $fg) * (255 - $bg) / 255);
   }
 }</code></pre></div>
-        <div class="flex-item centered">
+        <div class="flex-item--buttons centered">
           <div><button class="button-normal">FIND OUT MORE</button></div>
           <div style="margin-top: 2.5em;"><button class="button-multiply">FIND OUT MORE</button></div>
           <div style="margin-top: 2.5em;"><button class="button-overlay">FIND OUT MORE</button></div>
@@ -844,7 +855,7 @@ $background-color: #fa5400;
 
 @for $i from 1 through length($color-stops) {
 
-  $blended-color: photoshop-blend($blend, $background-color, nth( nth( $color-stops, $i ), 1 ), $opacity);
+  $blended-color: photoshop-blend('overlay', $background-color, nth( nth( $color-stops, $i ), 1 ), $opacity);
   $stop: join( $blended-color, stop-scale( nth( nth( $color-stops, $i ), 2 ), $scale ), space );
   $css-color-stops: append($css-color-stops, $stop, comma);
 
@@ -867,6 +878,7 @@ $background-color: #fa5400;
 }
 
 .button:active {
+  &hellip;
   linear-gradient(
     -180deg, rgba(245, 0, 0, 0.5) 0%, rgba(255, 168, 0, 0.5) 100%
   );

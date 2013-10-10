@@ -28,3 +28,11 @@
     $color-adjust: if(get-button-color-type($color) == "dark", 5, -5);
     @return adjust-color($color, $lightness: $color-adjust);
 }
+
+@function photoshop-drop-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
+  @return photoshop-shadow($angle, $distance, $spread, $size, $color);
+}
+
+@function photoshop-inner-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
+  @return photoshop-shadow($angle, $distance, $spread, $size, $color, true);
+}

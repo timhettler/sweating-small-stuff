@@ -45,11 +45,11 @@ $photoshop-global-light: 120deg !default;
 //--------------------------------
 // Photoshop Drop Shadow
 //--------------------------------
-@mixin photoshop-drop-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
+@mixin photoshop-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
   @include box-shadow(photoshop-shadow($angle, $distance, $spread, $size, $color));
 }
 
-@function photoshop-drop-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
+@function photoshop-shadow ($angle: $photoshop-global-light, $distance: 0, $spread: 0, $size: 0, $color: #000) {
   @return photoshop-shadow($angle, $distance, $spread, $size, $color);
 }
 

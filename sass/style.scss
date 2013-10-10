@@ -4,7 +4,6 @@
 @import "photoshop-gradient-overlay";
 @import "photoshop-drop-shadow";
 
-
 @import "base";
 @import "fonts";
 @import "prism";
@@ -45,6 +44,7 @@
 
     .flex-item {
         width: 50%;
+        flex-grow: 1;
     }
 }
 
@@ -53,7 +53,16 @@
 
     .flex-item {
         width: 33.3333%;
+        flex-grow: 1;
     }
+}
+
+.flex-item--adjustments {
+  width: 435px !important;
+}
+
+.flex-item--buttons {
+  width: 520px !important;
 }
 
 .centered {
@@ -135,7 +144,7 @@
 
 .complex-gradient{
   @extend %gradient-example;
-  @include background-image(photoshop-gradient-overlay(#fff, normal, 75%, 0deg, 50%, ( red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100% )));
+  @include background-image(photoshop-gradient-overlay(#fff, normal, 75%, 120deg, 50%, ( red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100% )));
 }
 
 %colored-text {
