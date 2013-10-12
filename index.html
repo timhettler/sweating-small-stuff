@@ -20,6 +20,8 @@
       <div class="centered">
         <p class="slide-title">@timhettler</p>
         <p><b>Open Standards Developer</b></br>at R/GA in NYC</p>
+        <hr>
+        <p class="small-text">HTTP://TIMHETTLER.GITHUB.IO/SWEATING-SMALL-STUFF/</p>
       </div>
     </section>
   </article>
@@ -80,7 +82,7 @@
   <article>
     <section class="slide-section">
       <div>
-        <p><b>Designers</b> &amp; <b>developers</b><br/>aren't speaking the same language</p>
+        <h2><b>Designers</b> &amp; <b>developers</b><br/>aren't speaking the same&nbsp;language</h2>
       </div>
     </section>
   </article>
@@ -100,16 +102,12 @@
   <article>
     <section class="slide-section">
       <p>We can <b>automate</b> this translation</p>
-    </section>
-  </article>
-  <article>
-    <section class="slide-section">
       <h2><b>Sass</b> is the <b>rosetta stone</b> between designers &amp; developers</h2>
     </section>
   </article>
   <article>
     <section class="slide-section">
-      <p>Let's rebuild our button using<br/><b>Sass</b></p>
+      <h2>Let's rebuild our button using&nbsp;<b>Sass</b></h2>
     </section>
   </article>
   <article>
@@ -276,7 +274,7 @@
   </article>
   <article>
     <section class="slide-section">
-      <div class="slide-title centered">The eye is more sensitive<br/>to changes in the<br/><b class="orange-blue">orange-blue</b> range than in the <b class="purple-green">purple-green</b> range</div>
+      <div class="slide-title centered">The eye is more sensitive<br/>to changes<br/>in the<b class="orange-blue">orange-blue</b> range than<br/>in the <b class="purple-green">purple-green</b> range</div>
     </section>
   </article>
   <article>
@@ -366,7 +364,7 @@
   @include yiq-contrasted(#fa5400);
 
   &:hover {
-    background-color: adjust-color(#fa5400, $lightness: 5%);
+    background-color: adjust-color(#fa5400, $lightness: 5);
   }
 }
 
@@ -375,7 +373,7 @@
   @include yiq-contrasted(#87e300);
 
   &:hover {
-    background-color: adjust-color(#87e300, $lightness: -5%);
+    background-color: adjust-color(#87e300, $lightness: -5);
   }
 }</code></pre>
         </div>
@@ -424,7 +422,7 @@
   <article>
     <section class="slide-section">
       <h2 class="slide-title">Using SASS,<br/>
-      Developers &amp; Designers</br>can <b>speak the same language</b></h2>
+      Developers &amp; Designers</br>can <b>speak the same&nbsp;language</b></h2>
     </section>
   </article>
   <article>
@@ -908,11 +906,11 @@ $background-color: #fa5400;
 
   &amp;:hover {
     @if (yiq-contrast-color($background-color, #000, #fff) == #fff) {
-      @include background-image(photoshop-gradient-overlay(lighten(#fa5400, 5%), 'overlay', 50%));
-      background-color: adjust-color(#fa5400, $lightness: 5%);
+      @include background-image(photoshop-gradient-overlay(lighten(#fa5400, 5), 'overlay', 50%));
+      background-color: adjust-color(#fa5400, $lightness: 5);
     } @else {
-      @include background-image(photoshop-gradient-overlay(darken(#fa5400, 5%), 'overlay', 50%));
-      background-color: adjust-color(#fa5400, $lightness: -5%);
+      @include background-image(photoshop-gradient-overlay(darken(#fa5400, 5), 'overlay', 50%));
+      background-color: adjust-color(#fa5400, $lightness: -5);
     }
   }
 
