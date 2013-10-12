@@ -1043,12 +1043,21 @@ html, body {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 57, ../sass/buttons/_module_buttons.scss */
+/* line 52, ../sass/buttons/_module_buttons.scss */
+.button-table button {
+  -webkit-transform: scale(3, 3);
+  -moz-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  -o-transform: scale(3, 3);
+  transform: scale(3, 3);
+}
+
+/* line 63, ../sass/buttons/_module_buttons.scss */
 .button-base-blue {
   background-color: #00a4e4;
 }
 
-/* line 64, ../sass/buttons/_module_buttons.scss */
+/* line 70, ../sass/buttons/_module_buttons.scss */
 .button-dark {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1059,7 +1068,7 @@ html, body {
   color: white;
 }
 
-/* line 70, ../sass/buttons/_module_buttons.scss */
+/* line 76, ../sass/buttons/_module_buttons.scss */
 .button-light {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1070,7 +1079,7 @@ html, body {
   color: #333333;
 }
 
-/* line 76, ../sass/buttons/_module_buttons.scss */
+/* line 82, ../sass/buttons/_module_buttons.scss */
 .button-DC404A-30 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1081,7 +1090,7 @@ html, body {
   color: #333333;
 }
 
-/* line 82, ../sass/buttons/_module_buttons.scss */
+/* line 88, ../sass/buttons/_module_buttons.scss */
 .button-87e300-30 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1092,7 +1101,7 @@ html, body {
   color: #333333;
 }
 
-/* line 88, ../sass/buttons/_module_buttons.scss */
+/* line 94, ../sass/buttons/_module_buttons.scss */
 .button-00A4E4-30 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1103,7 +1112,7 @@ html, body {
   color: #333333;
 }
 
-/* line 94, ../sass/buttons/_module_buttons.scss */
+/* line 100, ../sass/buttons/_module_buttons.scss */
 .button-DC404A-50 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1114,7 +1123,7 @@ html, body {
   color: #333333;
 }
 
-/* line 100, ../sass/buttons/_module_buttons.scss */
+/* line 106, ../sass/buttons/_module_buttons.scss */
 .button-87e300-50 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1125,7 +1134,7 @@ html, body {
   color: white;
 }
 
-/* line 106, ../sass/buttons/_module_buttons.scss */
+/* line 112, ../sass/buttons/_module_buttons.scss */
 .button-00A4E4-50 {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1136,7 +1145,7 @@ html, body {
   color: white;
 }
 
-/* line 112, ../sass/buttons/_module_buttons.scss */
+/* line 118, ../sass/buttons/_module_buttons.scss */
 .button-DC404A-yiq {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1147,7 +1156,7 @@ html, body {
   color: white;
 }
 
-/* line 118, ../sass/buttons/_module_buttons.scss */
+/* line 124, ../sass/buttons/_module_buttons.scss */
 .button-87e300-yiq {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1158,7 +1167,7 @@ html, body {
   color: #333333;
 }
 
-/* line 124, ../sass/buttons/_module_buttons.scss */
+/* line 130, ../sass/buttons/_module_buttons.scss */
 .button-00A4E4-yiq {
   -webkit-transform: scale(4, 4);
   -moz-transform: scale(4, 4);
@@ -1169,27 +1178,27 @@ html, body {
   color: white;
 }
 
-/* line 132, ../sass/buttons/_module_buttons.scss */
+/* line 138, ../sass/buttons/_module_buttons.scss */
 .button-state-fa4500 {
   background-color: #fa5400;
   color: white;
 }
-/* line 137, ../sass/buttons/_module_buttons.scss */
+/* line 143, ../sass/buttons/_module_buttons.scss */
 .button-state-fa4500:hover, .button-state-fa4500.is-hover {
   background-color: #ff742e;
 }
 
-/* line 142, ../sass/buttons/_module_buttons.scss */
+/* line 148, ../sass/buttons/_module_buttons.scss */
 .button-state-87e300 {
   background-color: #87e300;
   color: #333333;
 }
-/* line 147, ../sass/buttons/_module_buttons.scss */
+/* line 153, ../sass/buttons/_module_buttons.scss */
 .button-state-87e300:hover, .button-state-87e300.is-hover {
   background-color: #69b000;
 }
 
-/* line 154, ../sass/buttons/_module_buttons.scss */
+/* line 160, ../sass/buttons/_module_buttons.scss */
 .button-drop-shadow {
   background-color: #fa5400;
   color: white;
@@ -1205,7 +1214,7 @@ html, body {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.35) inset;
 }
 
-/* line 158, ../sass/buttons/_module_buttons.scss */
+/* line 164, ../sass/buttons/_module_buttons.scss */
 .button-text-shadow {
   background-color: #fa5400;
   color: white;
@@ -1223,7 +1232,7 @@ html, body {
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
-/* line 162, ../sass/buttons/_module_buttons.scss */
+/* line 168, ../sass/buttons/_module_buttons.scss */
 .button-wrapper {
   margin: 2em 0;
   text-align: center;
@@ -1246,7 +1255,7 @@ html, body {
 
 /* line 26, ../sass/style.scss */
 .unimpress-slide {
-  padding: 0 1em;
+  padding: 0 0.25em;
 }
 
 /* line 30, ../sass/style.scss */
@@ -1423,4 +1432,9 @@ body, .slide-title, .slide-title--main, .slide-title--sub {
   background-image: -moz-linear-gradient(left, #800080, #008000);
   background-image: -o-linear-gradient(left, #800080, #008000);
   background-image: linear-gradient(to right, #800080, #008000);
+}
+
+/* line 165, ../sass/style.scss */
+.is-url {
+  text-transform: lowercase;
 }

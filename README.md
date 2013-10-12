@@ -5,7 +5,7 @@ Sweating the Small Stuff: Recreating Subtle Design Details Using Sass
 
 ## My Slides
 
-[timhettler.github.io/sweating-small-stuff/](timhettler.github.io/sweating-small-stuff/)
+[timhettler.github.io/sweating-small-stuff/](http://timhettler.github.io/sweating-small-stuff/)
 
 Syntax highlighing in my slides is powered by Lea Verou's [Prism JS] (http://prismjs.com/), along with a [custom SCSS highlighter](https://gist.github.com/timhettler/5121421)
 

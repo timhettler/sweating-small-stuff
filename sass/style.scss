@@ -24,7 +24,7 @@
 }
 
 .unimpress-slide {
-  padding: 0 1em;
+  padding: 0 0.25em;
 }
 
 %flex-row {
@@ -160,4 +160,8 @@
 .purple-green {
   @extend %colored-text;
   @include background-image(linear-gradient(to right, purple, green));
+}
+
+.is-url {
+  text-transform: lowercase;
 }
