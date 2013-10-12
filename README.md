@@ -7,6 +7,8 @@ Sweating the Small Stuff: Recreating Subtle Design Details Using Sass
 
 [timhettler.github.io/sweating-small-stuff/](timhettler.github.io/sweating-small-stuff/)
 
+Syntax highlighing in my slides is powered by @leaverou's [Prism JS] (http://prismjs.com/), along with a [custom SCSS highlighter](https://gist.github.com/timhettler/5121421)
+
 ## GitHub Projects Mentioned
 
 * [Compass YIQ Color Contrast](https://github.com/timhettler/compass-yiq-color-contrast)
