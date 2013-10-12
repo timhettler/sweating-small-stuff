@@ -141,11 +141,10 @@
     <section class="slide-section">
       <div class="flex-row--2">
         <div class="flex-item">
-          <pre class="code-example" data-line="2,7"><code class="language-scss">.button-orange {
+          <pre class="code-example" data-line="2,6"><code class="language-scss">.button-orange {
   @extend %button;
   background-color: #fa5400;
 }
-
 .button-blue {
   @extend %button;
   background-color: #00a4e4;
@@ -153,11 +152,9 @@
           <pre class="code-example" data-line="1"><code class="language-css">.button-orange, .button-blue {
   &hellip;
 }
-
 .button-orange {
   background-color: #fa5400;
 }
-
 .button-blue {
   background-color: #00a4e4;
 }</code></pre>
@@ -322,11 +319,16 @@
   </article>
   <article>
     <section class="slide-section">
+      <h2>Managing <b>State</b></h2>
+    </section>
+  </article>
+  <article>
+    <section class="slide-section">
       <p class="slide-title centered">Dark Buttons <b>Lighten</b></p>
       <table class="button-table">
           <thead>
             <th scope="col">Normal State</th>
-            <th scope="col">Active State</th>
+            <th scope="col">Hover State</th>
           </thead>
           <tbody>
             <tr>
@@ -343,7 +345,7 @@
       <table class="button-table">
           <thead>
             <th scope="col">Normal State</th>
-            <th scope="col">Active State</th>
+            <th scope="col">Hover State</th>
           </thead>
           <tbody>
             <tr>
@@ -411,10 +413,10 @@
 }</code></pre>
         </div>
         <div class="flex-item centered">
-          <div class="centered"><button class="button-state-fa4500">FIND OUT MORE</button></div>
-          <div class="centered" style="margin-top: 1.5em"><button class="button-state-fa4500 is-hover">FIND OUT MORE</button></div>
-          <div class="centered" style="margin-top: 1.5em"><button class="button-state-87e300">FIND OUT MORE</button></div>
-          <div class="centered" style="margin-top: 1.5em"><button class="button-state-87e300 is-hover">FIND OUT MORE</button></div>
+          <div class="centered"><button class="button-state-fa4500 button--scale-3">FIND OUT MORE</button></div>
+          <div class="centered" style="margin-top: 1.5em"><button class="button-state-fa4500 button--scale-3 is-hover">FIND OUT MORE</button></div>
+          <div class="centered" style="margin-top: 1.5em"><button class="button-state-87e300 button--scale-3">FIND OUT MORE</button></div>
+          <div class="centered" style="margin-top: 1.5em"><button class="button-state-87e300 button--scale-3 is-hover">FIND OUT MORE</button></div>
         </div>
       </div>
     </section>
@@ -466,7 +468,7 @@
   </article>
   <article>
     <section class="slide-section">
-      <p class="slide-title centered">Calculating the missing sides of our&nbsp;triangle:<br/><b>SOHCAHTOA</b></p>
+      <p class="slide-title centered">Calculating the missing sides of our&nbsp;triangle: <b>SOHCAHTOA</b></p>
       <figure>
         <img src="images/sohcatoa1.png" alt="">
       </figure>
@@ -903,7 +905,6 @@ $background-color: #fa5400;
   @include yiq-contrasted(#fa5400);
   box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(#000, 0.25));
   text-shadow: photoshop-text-shadow(-90deg, 1px, 0, 0, rgba(yiq-contrast-color(#fa5400, #fff, #000), 0.4));
-
   &amp;:hover {
     @if (yiq-contrast-color($background-color, #000, #fff) == #fff) {
       @include background-image(photoshop-gradient-overlay(lighten(#fa5400, 5), 'overlay', 50%));
@@ -913,7 +914,6 @@ $background-color: #fa5400;
       background-color: adjust-color(#fa5400, $lightness: -5);
     }
   }
-
   &amp;:active {
     @include background-image(photoshop-gradient-overlay(#fa5400, 'overlay', 50%, -90deg));
     box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(#000, 0.35));
@@ -933,14 +933,12 @@ $background-color: #fa5400;
   @include yiq-contrasted($background-color);
   box-shadow: photoshop-drop-shadow(90deg, 1px, 0, 1px, rgba(#000, 0.25));
   text-shadow: photoshop-text-shadow(-90deg, 1px, 0, 0, rgba($shadow-color, 0.4));
-
   &amp;:hover {
     $color-adjust: if($color-type == "dark", 5, -5);
     $hover-color: adjust-color($background-color, $lightness: $color-adjust);
     @include background-image(photoshop-gradient-overlay($hover-color, 'overlay', 50%));
     background-color: $hover-color;
   }
-
   &amp;:active {
     @include background-image(photoshop-gradient-overlay($background-color, 'overlay', 50%, -90deg));
     box-shadow: photoshop-inner-shadow(90deg, 1px, 0, 4px, rgba(#000, 0.35));

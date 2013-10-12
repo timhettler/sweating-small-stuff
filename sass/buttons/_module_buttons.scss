@@ -54,6 +54,10 @@ $button-color-values: #fa5400, #ffd204, hotpink, #bada55;
   }
 }
 
+.button--scale-3 {
+  @include scale(3);
+}
+
 // Base Buttons (no shadow or gradient)
 
 .button-base-orange {
